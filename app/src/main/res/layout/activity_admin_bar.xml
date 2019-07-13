@@ -7,4 +7,9 @@
     android:background="#768DDA"
     tools:context=".AdminBar">
 
+    <ImageView
+        android:layout_width="410dp"
+        android:layout_height="200dp"
+        android:src="@drawable/undplogo"/>
+
 </LinearLayout>

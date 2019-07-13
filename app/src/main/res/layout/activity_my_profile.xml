@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#cc66"
+    android:orientation="vertical"
     >
 
     <TextView
@@ -14,15 +15,51 @@
         android:text="UNDP ACCOUNT"
         android:textSize="30dp"
         android:textStyle="italic"
+        android:drawableLeft="@drawable/ic_sentiment_very_satisfied_black_24dp"
+        android:drawablePadding="16dp"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/ic_sentiment_very_satisfied_black_24dp"
-        android:drawablePadding="16dp"/>
+        android:text="Define user type"
+        android:textSize="20dp"
+        android:padding="16dp"
+        />
+
+    <CheckBox
+        android:id="@+id/admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="admin user"
+        android:textSize="20dp"
+        android:padding="20dp"/>
+
+    <CheckBox
+        android:id="@+id/normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="normal user"
+        android:textSize="20dp"
+        android:padding="20dp"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:padding="20dp"
+        android:layout_marginLeft="20dp"/>
 
 
+
+    <TextView
+        android:id="@+id/sorry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="100dp"
+        />
 
 
 

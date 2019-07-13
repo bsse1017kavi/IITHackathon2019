@@ -32,13 +32,19 @@ public class AdminPanel extends AppCompatActivity {
             public void onClick(View v) {
 
                 if(pdf.isChecked() && !image.isChecked() && !video.isChecked()){
+                    Intent profileActivity = new Intent(AdminPanel.this, Upload.class);
+                    startActivity(profileActivity);
 
                 }
                 else if(!pdf.isChecked() && image.isChecked() && !video.isChecked()){
+                    Intent profileActivity = new Intent(AdminPanel.this, Upload.class);
+                    startActivity(profileActivity);
 
 
                 }
                 else if (!pdf.isChecked() && !image.isChecked() && video.isChecked()) {
+                    Intent profileActivity = new Intent(AdminPanel.this, Upload.class);
+                    startActivity(profileActivity);
 
                 }
 

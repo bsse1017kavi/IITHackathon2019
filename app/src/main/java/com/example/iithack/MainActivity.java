@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 id= (String) eid.getText().toString();
                 Verifier verifier = new Verifier();
                 verifier.initialize();
-                 if(verifier.verify(id))
+                if(verifier.verify(id))
                 {
                     Intent profileActivity = new Intent(MainActivity.this, myProfile.class);
                     startActivity(profileActivity);
@@ -47,11 +47,11 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else
 
-                 {
-                     sorry = (TextView) findViewById(R.id.sorry);
-                     sorry.setText("ID not found");
-                     Toast.makeText(MainActivity.this, "ID not found", Toast.LENGTH_SHORT).show();
-                 }
+                {
+                    sorry = (TextView) findViewById(R.id.sorry);
+                    sorry.setText("ID not found");
+                    Toast.makeText(MainActivity.this, "ID not found", Toast.LENGTH_SHORT).show();
+                }
             }
 
         });
